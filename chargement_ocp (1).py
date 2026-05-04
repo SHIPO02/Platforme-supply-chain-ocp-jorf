@@ -628,7 +628,6 @@ with st.sidebar:
         ("ventes","Pipeline des Ventes"),
         ("dashboard_ventes","Dashboard Ventes"),
         ("tsp_zoom","Zoom TSP"),
-        ("navires","Export Navire"),
     ]
     for key,label in NAV:
         t="primary" if st.session_state["page"]==key else "secondary"
@@ -651,7 +650,6 @@ TITLES={
     "ventes":("Pipeline des Ventes","Performances commerciales"),
     "dashboard_ventes":("Dashboard Ventes","Volume par Produit • Statut • Pays • Site"),
     "tsp_zoom":("Zoom TSP","Pipeline TSP — filtres & analyse complète"),
-    "navires":("Export Navire","Planification chargements"),
 }
 t_title,t_sub=TITLES[page]
 st.markdown(f'<div class="topbar"><div><div class="tb-title">{t_title}</div><div class="tb-bread">OCP Manufacturing &nbsp;›&nbsp; {t_title.split(" ",1)[1] if " " in t_title else t_title}</div></div><div class="tb-badge">{t_sub}</div></div>',unsafe_allow_html=True)
