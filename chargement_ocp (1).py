@@ -2935,9 +2935,3 @@ elif page=="tsp_zoom":
     st.caption(f"{len(df_tf)} ligne(s) TSP affichée(s) — {len(df_base_tsp)} total TSP dans le fichier")
   
 
-# ══════════════════════════════════════════════════════════════════════════════
-# PAGE EXPORT NAVIRE
-# ══════════════════════════════════════════════════════════════════════════════
-elif page=="navires":
-    st.markdown('<div class="ph-card"><h2>Export Navire</h2><p>Ce module permettra de planifier et suivre les chargements navires, les escales et les volumes exportés.</p><div class="ph-badge-b">PROCHAINEMENT</div></div>',unsafe_allow_html=True)
-
